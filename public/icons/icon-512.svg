@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" filter="url(#shadow)" />
+
+  <!-- Inner Circle Dial Base -->
+  <circle cx="256" cy="256" r="160" fill="#0f172a" fill-opacity="0.88" stroke="#334155" stroke-width="12" />
+
+  <!-- 8-Hour Circular Progress Arc (approx 75% completed) -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="url(#ringGrad)" stroke-width="14"
+          stroke-linecap="round" stroke-dasharray="1005" stroke-dashoffset="250"
+          transform="rotate(-90 256 256)" />
+
+  <!-- User / Briefcase + Clock Center Graphic -->
+  <g fill="#ffffff">
+    <!-- User Head -->
+    <circle cx="256" cy="210" r="38" />
+    <!-- User Body / Shoulders -->
+    <path d="M190 310 C190 260 322 260 322 310 Z" />
+    <!-- Clock Indicator Badge -->
+    <circle cx="330" cy="310" r="46" fill="#10b981" stroke="#0f172a" stroke-width="8" />
+    <circle cx="330" cy="310" r="3" fill="#ffffff" />
+    <path d="M330 286 V310 H346" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+
+  <!-- "8H" Text Emblem -->
+  <text x="256" y="380" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="34" font-weight="900" fill="#38bdf8" text-anchor="middle" letter-spacing="2">
+    8H TRACKER
+  </text>
+</svg>

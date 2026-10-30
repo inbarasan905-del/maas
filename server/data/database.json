@@ -1,0 +1,802 @@
+{
+  "users": [
+    {
+      "id": "EMP-1001",
+      "name": "Sarah Connor",
+      "email": "admin@company.com",
+      "phone": "+1 555-0101",
+      "password": "$2b$10$pbSN6GIezeypxah52dd6E.GpNbMlN4iIJJCRfioZkL0IVKDTlHdz6",
+      "plainDemoPassword": "admin123",
+      "role": "admin",
+      "department": "Management",
+      "designation": "Operations Director & Admin",
+      "joiningDate": "2022-01-15",
+      "salary": "$125,000 / yr",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+      "status": "active"
+    },
+    {
+      "id": "EMP-1002",
+      "name": "David Miller",
+      "email": "manager@company.com",
+      "phone": "+1 555-0102",
+      "password": "$2b$10$pbSN6GIezeypxah52dd6E.7RYD4ACfI1pnBCVKn8JTsexAoKSzHwO",
+      "plainDemoPassword": "manager123",
+      "role": "manager",
+      "department": "Engineering",
+      "designation": "Engineering Lead & Project Manager",
+      "joiningDate": "2022-06-01",
+      "salary": "$105,000 / yr",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "status": "active"
+    },
+    {
+      "id": "EMP-1003",
+      "name": "Alex Johnson",
+      "email": "alex@company.com",
+      "phone": "+1 555-0103",
+      "password": "$2b$10$tFBT3PUBwi7g0G2WGQK0hetLhQG.rZ63WSc0TAYOujuBfiZZ4.2je",
+      "plainDemoPassword": "employee123",
+      "role": "employee",
+      "department": "Engineering",
+      "designation": "Senior Full Stack Developer",
+      "joiningDate": "2023-02-10",
+      "salary": "$88,000 / yr",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "status": "active"
+    },
+    {
+      "id": "EMP-1004",
+      "name": "Elena Rostova",
+      "email": "elena@company.com",
+      "phone": "+1 555-0104",
+      "password": "$2b$10$pbSN6GIezeypxah52dd6E.n8gUmbCWt7DNGxO6som/aes9vpacKe.",
+      "plainDemoPassword": "password123",
+      "role": "employee",
+      "department": "Engineering",
+      "designation": "Frontend React/Vue Specialist",
+      "joiningDate": "2023-04-18",
+      "salary": "$82,000 / yr",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+      "status": "active"
+    },
+    {
+      "id": "EMP-1005",
+      "name": "Marcus Chen",
+      "email": "marcus@company.com",
+      "phone": "+1 555-0105",
+      "password": "$2b$10$pbSN6GIezeypxah52dd6E.n8gUmbCWt7DNGxO6som/aes9vpacKe.",
+      "plainDemoPassword": "password123",
+      "role": "employee",
+      "department": "Design",
+      "designation": "Lead Product & UI/UX Designer",
+      "joiningDate": "2023-08-01",
+      "salary": "$79,000 / yr",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+      "status": "active"
+    },
+    {
+      "id": "EMP-1006",
+      "name": "Priya Sharma",
+      "email": "priya@company.com",
+      "phone": "+1 555-0106",
+      "password": "$2b$10$pbSN6GIezeypxah52dd6E.n8gUmbCWt7DNGxO6som/aes9vpacKe.",
+      "plainDemoPassword": "password123",
+      "role": "employee",
+      "department": "Marketing",
+      "designation": "Digital Marketing Strategist",
+      "joiningDate": "2023-11-12",
+      "salary": "$74,000 / yr",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80",
+      "status": "active"
+    },
+    {
+      "id": "EMP-1007",
+      "name": "James Wilson",
+      "email": "james@company.com",
+      "phone": "+1 555-0107",
+      "password": "$2b$10$pbSN6GIezeypxah52dd6E.n8gUmbCWt7DNGxO6som/aes9vpacKe.",
+      "plainDemoPassword": "password123",
+      "role": "employee",
+      "department": "Sales",
+      "designation": "Senior Account Executive",
+      "joiningDate": "2024-01-08",
+      "salary": "$78,000 / yr",
+      "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80",
+      "status": "active"
+    },
+    {
+      "id": "EMP-1008",
+      "name": "Aaliyah Patel",
+      "email": "aaliyah@company.com",
+      "phone": "+1 555-0108",
+      "password": "$2b$10$pbSN6GIezeypxah52dd6E.n8gUmbCWt7DNGxO6som/aes9vpacKe.",
+      "plainDemoPassword": "password123",
+      "role": "employee",
+      "department": "HR",
+      "designation": "People & Culture Specialist",
+      "joiningDate": "2024-03-20",
+      "salary": "$71,000 / yr",
+      "avatar": "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=150&auto=format&fit=crop&q=80",
+      "status": "active"
+    },
+    {
+      "id": "EMP-5196",
+      "status": "active",
+      "joiningDate": "2026-10-30",
+      "name": "tyson",
+      "email": "tyson123@gmail.com",
+      "phone": "8428304510",
+      "password": "$2b$10$5W.loStf2peVYBIE73Ma3.WO7XTc9mHcWC5koaWwQwrXFdrD9Nwxa",
+      "plainDemoPassword": "tyson1234",
+      "role": "employee",
+      "department": "Sales",
+      "designation": "monitor",
+      "salary": "30000",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=tyson"
+    },
+    {
+      "id": "EMP-8238",
+      "status": "active",
+      "joiningDate": "2026-10-30",
+      "name": "abi",
+      "email": "abi123@gmail.com",
+      "phone": "638209080",
+      "password": "$2b$10$DFvp/..vg7mn3y0i12YY2.xyp/0QNYZglU3UmWhbkvU/C380VQoE2",
+      "plainDemoPassword": "abi123",
+      "role": "manager",
+      "department": "Design",
+      "designation": "🥇",
+      "salary": "25000",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=abi"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "ATT-2026-10-30-EMP-1004",
+      "employeeId": "EMP-1004",
+      "employeeName": "Elena Rostova",
+      "department": "Engineering",
+      "date": "2026-10-30",
+      "checkIn": "2026-10-30T02:49:15.448Z",
+      "checkOut": null,
+      "isOnBreak": false,
+      "breakStartTime": null,
+      "totalBreakSeconds": 1200,
+      "workedSeconds": 13500,
+      "status": "In Progress",
+      "note": "Auto-clocked in upon login"
+    },
+    {
+      "id": "ATT-2026-10-30-EMP-1005",
+      "employeeId": "EMP-1005",
+      "employeeName": "Marcus Chen",
+      "department": "Design",
+      "date": "2026-10-30",
+      "checkIn": "2026-10-30T01:19:15.448Z",
+      "checkOut": null,
+      "isOnBreak": true,
+      "breakStartTime": "2026-10-30T06:49:15.448Z",
+      "totalBreakSeconds": 1800,
+      "workedSeconds": 18900,
+      "status": "In Progress",
+      "note": "Auto-clocked in upon login (Currently on Lunch Break)"
+    },
+    {
+      "id": "ATT-2026-10-30-EMP-1002",
+      "employeeId": "EMP-1002",
+      "employeeName": "David Miller",
+      "department": "Engineering",
+      "date": "2026-10-30",
+      "checkIn": "2026-10-30T00:54:15.448Z",
+      "checkOut": "2026-10-30T08:51:41.948Z",
+      "isOnBreak": false,
+      "breakStartTime": null,
+      "totalBreakSeconds": 2400,
+      "workedSeconds": 26246,
+      "status": "Short Hours",
+      "note": "Auto-clocked in upon login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout"
+    },
+    {
+      "id": "ATT-2026-10-30-EMP-1001",
+      "employeeId": "EMP-1001",
+      "employeeName": "Sarah Connor",
+      "department": "Management",
+      "date": "2026-10-30",
+      "checkIn": "2026-10-30T07:10:56.222Z",
+      "checkOut": null,
+      "isOnBreak": false,
+      "breakStartTime": null,
+      "totalBreakSeconds": 436,
+      "workedSeconds": 5593,
+      "status": "In Progress",
+      "note": "Auto-clocked in upon login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login"
+    },
+    {
+      "id": "ATT-2026-10-30-EMP-1003",
+      "employeeId": "EMP-1003",
+      "employeeName": "Alex Johnson",
+      "department": "Engineering",
+      "date": "2026-10-30",
+      "checkIn": "2026-10-30T07:10:56.449Z",
+      "checkOut": "2026-10-30T08:51:18.077Z",
+      "isOnBreak": false,
+      "breakStartTime": null,
+      "totalBreakSeconds": 1,
+      "workedSeconds": 6020,
+      "status": "Short Hours",
+      "note": "Auto-clocked in upon login | Checked out manually | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout"
+    },
+    {
+      "id": "ATT-2026-10-30-EMP-5196",
+      "employeeId": "EMP-5196",
+      "employeeName": "tyson",
+      "department": "Sales",
+      "date": "2026-10-30",
+      "checkIn": "2026-10-30T07:28:43.192Z",
+      "checkOut": "2026-10-30T07:34:53.098Z",
+      "isOnBreak": false,
+      "breakStartTime": null,
+      "totalBreakSeconds": 28,
+      "workedSeconds": 341,
+      "status": "Short Hours",
+      "note": "Auto-clocked in upon login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout"
+    },
+    {
+      "id": "ATT-PAST-1-EMP-1003",
+      "employeeId": "EMP-1003",
+      "employeeName": "Alex Johnson",
+      "department": "Engineering",
+      "date": "2026-10-29",
+      "checkIn": "09:02:15",
+      "checkOut": "17:42:10",
+      "totalBreakSeconds": 2700,
+      "workedSeconds": 28800,
+      "status": "Completed",
+      "note": "Full 8 hours completed"
+    },
+    {
+      "id": "ATT-PAST-2-EMP-1003",
+      "employeeId": "EMP-1003",
+      "employeeName": "Alex Johnson",
+      "department": "Engineering",
+      "date": "2026-10-28",
+      "checkIn": "08:55:00",
+      "checkOut": "17:35:00",
+      "totalBreakSeconds": 3600,
+      "workedSeconds": 28800,
+      "status": "Completed",
+      "note": "Target met"
+    },
+    {
+      "id": "ATT-PAST-3-EMP-1003",
+      "employeeId": "EMP-1003",
+      "employeeName": "Alex Johnson",
+      "department": "Engineering",
+      "date": "2026-10-27",
+      "checkIn": "09:15:00",
+      "checkOut": "18:15:00",
+      "totalBreakSeconds": 3000,
+      "workedSeconds": 29400,
+      "status": "Completed",
+      "note": "Overtime +10m"
+    },
+    {
+      "id": "ATT-PAST-4-EMP-1003",
+      "employeeId": "EMP-1003",
+      "employeeName": "Alex Johnson",
+      "department": "Engineering",
+      "date": "2026-10-26",
+      "checkIn": "09:30:00",
+      "checkOut": "16:30:00",
+      "totalBreakSeconds": 3600,
+      "workedSeconds": 21600,
+      "status": "Short Hours",
+      "note": "Approved early leave for doctor appointment"
+    }
+  ],
+  "leaves": [
+    {
+      "id": "LV-203",
+      "appliedAt": "2026-10-30T07:34:09.976Z",
+      "status": "Approved",
+      "reviewedBy": "Sarah Connor",
+      "reviewNote": "hjdffdghj",
+      "employeeId": "EMP-5196",
+      "employeeName": "tyson",
+      "department": "Sales",
+      "leaveType": "Casual Leave",
+      "startDate": "2026-10-30",
+      "endDate": "2026-11-03",
+      "reason": "jhhghgchjkl;",
+      "reviewedAt": "2026-10-30T07:36:20.770Z"
+    },
+    {
+      "id": "LV-495",
+      "appliedAt": "2026-10-30T07:19:06.362Z",
+      "status": "Approved",
+      "reviewedBy": "Sarah Connor",
+      "reviewNote": "yes",
+      "employeeId": "EMP-1003",
+      "employeeName": "Alex Johnson",
+      "department": "Engineering",
+      "leaveType": "Casual Leave",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "reason": "i have samma",
+      "reviewedAt": "2026-10-30T07:22:33.518Z"
+    },
+    {
+      "id": "LV-201",
+      "employeeId": "EMP-1006",
+      "employeeName": "Priya Sharma",
+      "department": "Marketing",
+      "leaveType": "Annual Leave",
+      "startDate": "2026-10-30",
+      "endDate": "2026-11-01",
+      "reason": "Family event and travel",
+      "status": "Approved",
+      "appliedAt": "2026-10-28T07:04:15.448Z",
+      "reviewedBy": "Sarah Connor",
+      "reviewNote": "Enjoy your time off!"
+    },
+    {
+      "id": "LV-202",
+      "employeeId": "EMP-1004",
+      "employeeName": "Elena Rostova",
+      "department": "Engineering",
+      "leaveType": "Casual Leave",
+      "startDate": "2026-11-04",
+      "endDate": "2026-11-04",
+      "reason": "Home utility maintenance & deliveries",
+      "status": "Approved",
+      "appliedAt": "2026-10-29T19:04:15.448Z",
+      "reviewedBy": "Sarah Connor",
+      "reviewNote": "",
+      "reviewedAt": "2026-10-30T07:16:11.230Z"
+    },
+    {
+      "id": "LV-203",
+      "employeeId": "EMP-1007",
+      "employeeName": "James Wilson",
+      "department": "Sales",
+      "leaveType": "Sick Leave",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-23",
+      "reason": "Seasonal flu",
+      "status": "Approved",
+      "appliedAt": "2026-10-21T23:04:15.448Z",
+      "reviewedBy": "Sarah Connor",
+      "reviewNote": "Get well soon"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "LOG-1793350333236-567",
+      "timestamp": "2026-10-30T08:52:13.236Z",
+      "user": "Sarah Connor",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
+    {
+      "id": "LOG-1793350301949-321",
+      "timestamp": "2026-10-30T08:51:41.949Z",
+      "user": "David Miller",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 7.29h."
+    },
+    {
+      "id": "LOG-1793350287020-216",
+      "timestamp": "2026-10-30T08:51:27.020Z",
+      "user": "David Miller",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
+    {
+      "id": "LOG-1793350285371-846",
+      "timestamp": "2026-10-30T08:51:25.371Z",
+      "user": "Sarah Connor",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 1.55h."
+    },
+    {
+      "id": "LOG-1793350279565-975",
+      "timestamp": "2026-10-30T08:51:19.565Z",
+      "user": "Sarah Connor",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
+    {
+      "id": "LOG-1793350278078-393",
+      "timestamp": "2026-10-30T08:51:18.078Z",
+      "user": "Alex Johnson",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 1.67h."
+    },
+    {
+      "id": "LOG-1793350272508-925",
+      "timestamp": "2026-10-30T08:51:12.508Z",
+      "user": "Alex Johnson",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
+    {
+      "id": "LOG-1793350270093-393",
+      "timestamp": "2026-10-30T08:51:10.093Z",
+      "user": "David Miller",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 7.28h."
+    },
+    {
+      "id": "LOG-1793350264170-68",
+      "timestamp": "2026-10-30T08:51:04.170Z",
+      "user": "David Miller",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
+    {
+      "id": "LOG-1793350261983-783",
+      "timestamp": "2026-10-30T08:51:01.983Z",
+      "user": "Sarah Connor",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 1.55h."
+    },
+    {
+      "id": "LOG-1793350256940-473",
+      "timestamp": "2026-10-30T08:50:56.940Z",
+      "user": "Sarah Connor",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
+    {
+      "id": "LOG-1793350225900-824",
+      "timestamp": "2026-10-30T08:50:25.900Z",
+      "user": "Sarah Connor",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 1.54h."
+    },
+    {
+      "id": "LOG-1793349721920-191",
+      "timestamp": "2026-10-30T08:42:01.920Z",
+      "user": "Sarah Connor",
+      "action": "CREATE_EMPLOYEE",
+      "details": "Created new employee profile for abi (EMP-8238) in Design."
+    },
+    {
+      "id": "LOG-1793349456664-287",
+      "timestamp": "2026-10-30T08:37:36.664Z",
+      "user": "Sarah Connor",
+      "action": "LOGIN",
+      "details": "User logged in. Active work session continues."
+    },
+    {
+      "id": "LOG-1793349399731-521",
+      "timestamp": "2026-10-30T08:36:39.731Z",
+      "user": "Sarah Connor",
+      "action": "LOGIN",
+      "details": "User logged in. Active work session continues."
+    },
+    {
+      "id": "LOG-1793348511008-542",
+      "timestamp": "2026-10-30T08:21:51.008Z",
+      "user": "Sarah Connor",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
+    {
+      "id": "LOG-1793348495017-647",
+      "timestamp": "2026-10-30T08:21:35.017Z",
+      "user": "Sarah Connor",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 1.06h."
+    },
+    {
+      "id": "LOG-1793347882731-326",
+      "timestamp": "2026-10-30T08:11:22.731Z",
+      "user": "Sarah Connor",
+      "action": "LOGIN",
+      "details": "User logged in. Active work session continues."
+    },
+    {
+      "id": "LOG-1793347846768-2",
+      "timestamp": "2026-10-30T08:10:46.769Z",
+      "user": "Sarah Connor",
+      "action": "LOGIN",
+      "details": "User logged in. Active work session continues."
+    },
+    {
+      "id": "LOG-1793345780771-616",
+      "timestamp": "2026-10-30T07:36:20.771Z",
+      "user": "Sarah Connor",
+      "action": "LEAVE_APPROVAL",
+      "details": "Approved leave LV-203 for tyson. Note: hjdffdghj"
+    },
+    {
+      "id": "LOG-1793345743508-869",
+      "timestamp": "2026-10-30T07:35:43.508Z",
+      "user": "Sarah Connor",
+      "action": "BREAK_END",
+      "details": "Employee resumed work. Break duration: 0 mins."
+    },
+    {
+      "id": "LOG-1793345741492-389",
+      "timestamp": "2026-10-30T07:35:41.492Z",
+      "user": "Sarah Connor",
+      "action": "BREAK_START",
+      "details": "Employee paused work for a break."
+    },
+    {
+      "id": "LOG-1793345703847-17",
+      "timestamp": "2026-10-30T07:35:03.847Z",
+      "user": "Sarah Connor",
+      "action": "LOGIN",
+      "details": "User logged in. Active work session continues."
+    },
+    {
+      "id": "LOG-1793345693100-981",
+      "timestamp": "2026-10-30T07:34:53.100Z",
+      "user": "tyson",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 0.09h."
+    },
+    {
+      "id": "LOG-1793345664482-935",
+      "timestamp": "2026-10-30T07:34:24.482Z",
+      "user": "tyson",
+      "action": "BREAK_START",
+      "details": "Employee paused work for a break."
+    },
+    {
+      "id": "LOG-1793345663421-617",
+      "timestamp": "2026-10-30T07:34:23.421Z",
+      "user": "tyson",
+      "action": "BREAK_END",
+      "details": "Employee resumed work. Break duration: 0 mins."
+    },
+    {
+      "id": "LOG-1793345662706-847",
+      "timestamp": "2026-10-30T07:34:22.706Z",
+      "user": "tyson",
+      "action": "BREAK_START",
+      "details": "Employee paused work for a break."
+    },
+    {
+      "id": "LOG-1793345649979-338",
+      "timestamp": "2026-10-30T07:34:09.979Z",
+      "user": "tyson",
+      "action": "APPLY_LEAVE",
+      "details": "Applied for Casual Leave from 2026-10-30 to 2026-11-03."
+    },
+    {
+      "id": "LOG-1793345598731-188",
+      "timestamp": "2026-10-30T07:33:18.731Z",
+      "user": "tyson",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
+    {
+      "id": "LOG-1793345587645-772",
+      "timestamp": "2026-10-30T07:33:07.645Z",
+      "user": "David Miller",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 5.98h."
+    },
+    {
+      "id": "LOG-1793345545203-872",
+      "timestamp": "2026-10-30T07:32:25.203Z",
+      "user": "David Miller",
+      "action": "LOGIN",
+      "details": "User logged in. Active work session continues."
+    },
+    {
+      "id": "LOG-1793345407655-53",
+      "timestamp": "2026-10-30T07:30:07.655Z",
+      "user": "Sarah Connor",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
+    {
+      "id": "LOG-1793345394359-313",
+      "timestamp": "2026-10-30T07:29:54.359Z",
+      "user": "tyson",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 0.02h."
+    },
+    {
+      "id": "LOG-1793345323194-662",
+      "timestamp": "2026-10-30T07:28:43.194Z",
+      "user": "tyson",
+      "action": "AUTO_CHECK_IN",
+      "details": "User logged in. Automatic 8h work timer started at 12:58:43 pm."
+    },
+    {
+      "id": "LOG-1793345296232-998",
+      "timestamp": "2026-10-30T07:28:16.232Z",
+      "user": "Sarah Connor",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 0.17h."
+    },
+    {
+      "id": "LOG-1793345268651-513",
+      "timestamp": "2026-10-30T07:27:48.651Z",
+      "user": "Sarah Connor",
+      "action": "CREATE_EMPLOYEE",
+      "details": "Created new employee profile for tyson (EMP-5196) in Sales."
+    },
+    {
+      "id": "LOG-1793344953519-629",
+      "timestamp": "2026-10-30T07:22:33.519Z",
+      "user": "Sarah Connor",
+      "action": "LEAVE_APPROVAL",
+      "details": "Approved leave LV-495 for Alex Johnson. Note: yes"
+    },
+    {
+      "id": "LOG-1793344862170-138",
+      "timestamp": "2026-10-30T07:21:02.170Z",
+      "user": "Sarah Connor",
+      "action": "BREAK_START",
+      "details": "Employee paused work for a break."
+    },
+    {
+      "id": "LOG-1793344819724-742",
+      "timestamp": "2026-10-30T07:20:19.724Z",
+      "user": "Sarah Connor",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
+    {
+      "id": "LOG-1793344791122-55",
+      "timestamp": "2026-10-30T07:19:51.122Z",
+      "user": "Alex Johnson",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 0.15h."
+    },
+    {
+      "id": "LOG-1793344746363-328",
+      "timestamp": "2026-10-30T07:19:06.363Z",
+      "user": "Alex Johnson",
+      "action": "APPLY_LEAVE",
+      "details": "Applied for Casual Leave from 2026-10-30 to 2026-10-30."
+    },
+    {
+      "id": "LOG-1793344679275-186",
+      "timestamp": "2026-10-30T07:17:59.275Z",
+      "user": "Alex Johnson",
+      "action": "LOGIN",
+      "details": "User logged in. Active work session continues."
+    },
+    {
+      "id": "LOG-1793344647635-779",
+      "timestamp": "2026-10-30T07:17:27.635Z",
+      "user": "Sarah Connor",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 0.11h."
+    },
+    {
+      "id": "LOG-1793344571232-858",
+      "timestamp": "2026-10-30T07:16:11.232Z",
+      "user": "Sarah Connor",
+      "action": "LEAVE_APPROVAL",
+      "details": "Approved leave LV-202 for Elena Rostova. Note: None"
+    },
+    {
+      "id": "LOG-1793344506091-877",
+      "timestamp": "2026-10-30T07:15:06.091Z",
+      "user": "Sarah Connor",
+      "action": "LOGIN",
+      "details": "User logged in. Active work session continues."
+    },
+    {
+      "id": "LOG-1793344310244-378",
+      "timestamp": "2026-10-30T07:11:50.244Z",
+      "user": "Alex Johnson",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
+    {
+      "id": "LOG-1793344298469-356",
+      "timestamp": "2026-10-30T07:11:38.469Z",
+      "user": "Alex Johnson",
+      "action": "MANUAL_CHECK_OUT",
+      "details": "Employee checked out manually. Total time worked: 0.01h."
+    },
+    {
+      "id": "LOG-1793344298459-40",
+      "timestamp": "2026-10-30T07:11:38.460Z",
+      "user": "Alex Johnson",
+      "action": "BREAK_END",
+      "details": "Employee resumed work. Break duration: 0 mins."
+    },
+    {
+      "id": "LOG-1793344297445-978",
+      "timestamp": "2026-10-30T07:11:37.445Z",
+      "user": "Alex Johnson",
+      "action": "BREAK_START",
+      "details": "Employee paused work for a break."
+    },
+    {
+      "id": "LOG-1793344297399-448",
+      "timestamp": "2026-10-30T07:11:37.399Z",
+      "user": "Alex Johnson",
+      "action": "LOGIN",
+      "details": "User logged in. Active work session continues."
+    },
+    {
+      "id": "LOG-1793344270590-726",
+      "timestamp": "2026-10-30T07:11:10.590Z",
+      "user": "Alex Johnson",
+      "action": "PASSWORD_RESET_SUCCESS",
+      "details": "Password successfully updated."
+    },
+    {
+      "id": "LOG-1793344270506-291",
+      "timestamp": "2026-10-30T07:11:10.506Z",
+      "user": "Alex Johnson",
+      "action": "PASSWORD_RESET_OTP_SENT",
+      "details": "Password reset OTP generated for alex@company.com / +1 555-0103"
+    },
+    {
+      "id": "LOG-1793344270496-85",
+      "timestamp": "2026-10-30T07:11:10.496Z",
+      "user": "Alex Johnson",
+      "action": "LOGIN",
+      "details": "User logged in. Active work session continues."
+    },
+    {
+      "id": "LOG-1793344270410-609",
+      "timestamp": "2026-10-30T07:11:10.410Z",
+      "user": "Alex Johnson",
+      "action": "PASSWORD_RESET_SUCCESS",
+      "details": "Password successfully updated."
+    },
+    {
+      "id": "LOG-1793344270298-554",
+      "timestamp": "2026-10-30T07:11:10.298Z",
+      "user": "Alex Johnson",
+      "action": "PASSWORD_RESET_OTP_SENT",
+      "details": "Password reset OTP generated for alex@company.com / +1 555-0103"
+    },
+    {
+      "id": "LOG-1793344256451-117",
+      "timestamp": "2026-10-30T07:10:56.451Z",
+      "user": "Alex Johnson",
+      "action": "AUTO_CHECK_IN",
+      "details": "User logged in. Automatic 8h work timer started at 12:40:56 pm."
+    },
+    {
+      "id": "LOG-1793344256323-305",
+      "timestamp": "2026-10-30T07:10:56.323Z",
+      "user": "Sarah Connor",
+      "action": "AUTO_CHECK_IN",
+      "details": "User logged in. Automatic 8h work timer started at 12:40:56 pm."
+    },
+    {
+      "id": "LOG-1",
+      "timestamp": "2026-10-30T00:54:15.448Z",
+      "user": "David Miller",
+      "action": "LOGIN",
+      "details": "Logged in from Web App. Automatic 8h Attendance Check In initiated."
+    },
+    {
+      "id": "LOG-2",
+      "timestamp": "2026-10-30T01:19:15.448Z",
+      "user": "Marcus Chen",
+      "action": "LOGIN",
+      "details": "Logged in from Mobile PWA. Automatic 8h Attendance Check In initiated."
+    },
+    {
+      "id": "LOG-3",
+      "timestamp": "2026-10-30T02:49:15.448Z",
+      "user": "Elena Rostova",
+      "action": "LOGIN",
+      "details": "Logged in from Web App. Automatic 8h Attendance Check In initiated."
+    },
+    {
+      "id": "LOG-4",
+      "timestamp": "2026-10-30T03:34:15.448Z",
+      "user": "Sarah Connor",
+      "action": "LEAVE_APPROVAL",
+      "details": "Approved Annual Leave request LV-201 for Priya Sharma."
+    }
+  ]
+}
