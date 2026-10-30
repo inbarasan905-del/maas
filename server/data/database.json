@@ -204,13 +204,13 @@
       "department": "Management",
       "date": "2026-10-30",
       "checkIn": "2026-10-30T07:10:56.222Z",
-      "checkOut": "2026-10-30T09:38:25.528Z",
+      "checkOut": null,
       "isOnBreak": false,
       "breakStartTime": null,
       "totalBreakSeconds": 436,
       "workedSeconds": 8413,
-      "status": "Short Hours",
-      "note": "Auto-clocked in upon login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout"
+      "status": "In Progress",
+      "note": "Auto-clocked in upon login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login"
     },
     {
       "id": "ATT-2026-10-30-EMP-1003",
@@ -386,6 +386,13 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "LOG-1793353821445-249",
+      "timestamp": "2026-10-30T09:50:21.445Z",
+      "user": "Sarah Connor",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
     {
       "id": "LOG-1793353572565-372",
       "timestamp": "2026-10-30T09:46:12.565Z",
