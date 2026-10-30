@@ -11,7 +11,18 @@ class AppState {
 
   setUser(user) {
     this.user = user;
+    if (!user) {
+      this.currentView = 'login';
+      this.todayAttendance = null;
+    }
     this.notify('user', user);
+  }
+
+  clearUser() {
+    this.user = null;
+    this.todayAttendance = null;
+    this.currentView = 'login';
+    this.notify('user', null);
   }
 
   setTodayAttendance(att) {

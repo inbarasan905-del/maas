@@ -204,13 +204,13 @@
       "department": "Management",
       "date": "2026-10-30",
       "checkIn": "2026-10-30T07:10:56.222Z",
-      "checkOut": null,
+      "checkOut": "2026-10-30T09:38:25.528Z",
       "isOnBreak": false,
       "breakStartTime": null,
       "totalBreakSeconds": 436,
-      "workedSeconds": 5593,
-      "status": "In Progress",
-      "note": "Auto-clocked in upon login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login"
+      "workedSeconds": 8413,
+      "status": "Short Hours",
+      "note": "Auto-clocked in upon login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout"
     },
     {
       "id": "ATT-2026-10-30-EMP-1003",
@@ -219,13 +219,13 @@
       "department": "Engineering",
       "date": "2026-10-30",
       "checkIn": "2026-10-30T07:10:56.449Z",
-      "checkOut": "2026-10-30T08:51:18.077Z",
+      "checkOut": "2026-10-30T09:46:12.563Z",
       "isOnBreak": false,
       "breakStartTime": null,
       "totalBreakSeconds": 1,
-      "workedSeconds": 6020,
+      "workedSeconds": 9315,
       "status": "Short Hours",
-      "note": "Auto-clocked in upon login | Checked out manually | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout"
+      "note": "Auto-clocked in upon login | Checked out manually | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout"
     },
     {
       "id": "ATT-2026-10-30-EMP-5196",
@@ -241,6 +241,21 @@
       "workedSeconds": 341,
       "status": "Short Hours",
       "note": "Auto-clocked in upon login | Auto-clocked out upon logout | Resumed on re-login | Auto-clocked out upon logout"
+    },
+    {
+      "id": "ATT-2026-10-30-EMP-8238",
+      "employeeId": "EMP-8238",
+      "employeeName": "abi",
+      "department": "Design",
+      "date": "2026-10-30",
+      "checkIn": "2026-10-30T09:04:27.831Z",
+      "checkOut": "2026-10-30T09:11:05.091Z",
+      "isOnBreak": false,
+      "breakStartTime": null,
+      "totalBreakSeconds": 0,
+      "workedSeconds": 397,
+      "status": "Short Hours",
+      "note": "Auto-clocked in upon login | Auto-clocked out upon logout"
     },
     {
       "id": "ATT-PAST-1-EMP-1003",
@@ -293,21 +308,6 @@
       "workedSeconds": 21600,
       "status": "Short Hours",
       "note": "Approved early leave for doctor appointment"
-    },
-    {
-      "id": "ATT-2026-10-30-EMP-8238",
-      "employeeId": "EMP-8238",
-      "employeeName": "abi",
-      "department": "Design",
-      "date": "2026-10-30",
-      "checkIn": "2026-10-30T09:04:27.831Z",
-      "checkOut": null,
-      "isOnBreak": false,
-      "breakStartTime": null,
-      "totalBreakSeconds": 0,
-      "workedSeconds": 0,
-      "status": "In Progress",
-      "note": "Auto-clocked in upon login"
     }
   ],
   "leaves": [
@@ -386,6 +386,90 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "LOG-1793353572565-372",
+      "timestamp": "2026-10-30T09:46:12.565Z",
+      "user": "Alex Johnson",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 2.59h."
+    },
+    {
+      "id": "LOG-1793353562676-608",
+      "timestamp": "2026-10-30T09:46:02.676Z",
+      "user": "Alex Johnson",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
+    {
+      "id": "LOG-1793353123609-166",
+      "timestamp": "2026-10-30T09:38:43.609Z",
+      "user": "Alex Johnson",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 2.46h."
+    },
+    {
+      "id": "LOG-1793353109085-680",
+      "timestamp": "2026-10-30T09:38:29.085Z",
+      "user": "Alex Johnson",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
+    {
+      "id": "LOG-1793353105530-706",
+      "timestamp": "2026-10-30T09:38:25.530Z",
+      "user": "Sarah Connor",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 2.34h."
+    },
+    {
+      "id": "LOG-1793353080932-346",
+      "timestamp": "2026-10-30T09:38:00.932Z",
+      "user": "Sarah Connor",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
+    {
+      "id": "LOG-1793353054054-190",
+      "timestamp": "2026-10-30T09:37:34.055Z",
+      "user": "Sarah Connor",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 2.32h."
+    },
+    {
+      "id": "LOG-1793352697661-373",
+      "timestamp": "2026-10-30T09:31:37.661Z",
+      "user": "Sarah Connor",
+      "action": "LOGIN",
+      "details": "User logged in. Active work session continues."
+    },
+    {
+      "id": "LOG-1793352659825-690",
+      "timestamp": "2026-10-30T09:30:59.826Z",
+      "user": "Sarah Connor",
+      "action": "RESUME_WORK",
+      "details": "User logged back in. Resumed today's work session."
+    },
+    {
+      "id": "LOG-1793352653711-409",
+      "timestamp": "2026-10-30T09:30:53.711Z",
+      "user": "Sarah Connor",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 2.21h."
+    },
+    {
+      "id": "LOG-1793351473467-219",
+      "timestamp": "2026-10-30T09:11:13.467Z",
+      "user": "Sarah Connor",
+      "action": "LOGIN",
+      "details": "User logged in. Active work session continues."
+    },
+    {
+      "id": "LOG-1793351465094-745",
+      "timestamp": "2026-10-30T09:11:05.094Z",
+      "user": "abi",
+      "action": "AUTO_CHECK_OUT",
+      "details": "User logged out. Working session concluded. Total: 0.11h."
+    },
     {
       "id": "LOG-1793351067836-93",
       "timestamp": "2026-10-30T09:04:27.836Z",

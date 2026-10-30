@@ -5,6 +5,10 @@ import { formatTimeOnly } from '../timer.js';
 export function renderManagerView() {
   const container = document.getElementById('view-content');
   const user = state.user;
+  if (!user) {
+    state.setView('login');
+    return;
+  }
 
   container.innerHTML = `
     <div class="manager-dashboard-layout">

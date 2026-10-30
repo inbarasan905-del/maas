@@ -61,32 +61,55 @@ function updateThemeIcon(theme) {
   if (window.lucide) window.lucide.createIcons();
 }
 
+// Universal Safe Logout & Exit Handler
+window.logoutUser = async function () {
+  stopLiveTracker();
+  const user = state.user;
+  const userId = user ? user.id : null;
+
+  // Clear auth and reset state to login immediately
+  api.setToken(null);
+  state.clearUser();
+
+  if (userId) {
+    try {
+      await api.logout(userId);
+    } catch (e) {
+      console.warn('Backend session finalize skipped:', e);
+    }
+  }
+
+  window.showToast('You have exited successfully. Have a great day!', 'info');
+};
+
 // Main View Router
 function renderCurrentView() {
   const sidebar = document.getElementById('sidebar-container');
   const topbar = document.getElementById('topbar-container');
   const bottomNav = document.getElementById('mobile-bottom-nav');
 
-  if (state.currentView === 'login') {
+  if (!state.user || state.currentView === 'login') {
+    state.currentView = 'login';
     if (sidebar) sidebar.style.display = 'none';
     if (topbar) topbar.style.display = 'none';
     if (bottomNav) bottomNav.style.display = 'none';
     renderLoginView();
-  } else {
-    if (sidebar) sidebar.style.display = 'flex';
-    if (topbar) topbar.style.display = 'flex';
-    if (bottomNav) bottomNav.style.display = 'flex';
-    renderSidebar();
-    renderTopbar();
-    renderMobileBottomNav();
+    return;
+  }
 
-    if (state.currentView === 'admin') {
-      renderAdminView();
-    } else if (state.currentView === 'manager') {
-      renderManagerView();
-    } else {
-      renderEmployeeView();
-    }
+  if (sidebar) sidebar.style.display = 'flex';
+  if (topbar) topbar.style.display = 'flex';
+  if (bottomNav) bottomNav.style.display = 'flex';
+  renderSidebar();
+  renderTopbar();
+  renderMobileBottomNav();
+
+  if (state.currentView === 'admin') {
+    renderAdminView();
+  } else if (state.currentView === 'manager') {
+    renderManagerView();
+  } else {
+    renderEmployeeView();
   }
 }
 
@@ -130,9 +153,19 @@ function renderSidebar() {
         <div class="user-role-subtitle">${user.role.toUpperCase()} &bull; ${user.department}</div>
       </div>
     </div>
+
+    <div style="padding: 0 1rem 1rem;">
+      <button class="btn btn-danger btn-sm" id="btn-sidebar-logout" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+        <i data-lucide="log-out" style="width: 15px; height: 15px;"></i>
+        <span>Exit System</span>
+      </button>
+    </div>
   `;
 
   if (window.lucide) window.lucide.createIcons();
+
+  const sidebarLogout = document.getElementById('btn-sidebar-logout');
+  if (sidebarLogout) sidebarLogout.addEventListener('click', () => window.logoutUser());
 
   // Attach navigation links
   const adminLink = document.getElementById('nav-admin-link');
@@ -177,16 +210,10 @@ function renderTopbar() {
   if (window.lucide) window.lucide.createIcons();
   setupTheme();
 
-  document.getElementById('btn-topbar-logout').addEventListener('click', async () => {
-    stopLiveTracker();
-    try {
-      await api.logout(user.id);
-    } catch (e) {}
-    api.setToken(null);
-    state.setUser(null);
-    state.setView('login');
-    window.showToast('You have been logged out. Working hours finalized.', 'info');
-  });
+  const topbarLogout = document.getElementById('btn-topbar-logout');
+  if (topbarLogout) {
+    topbarLogout.addEventListener('click', () => window.logoutUser());
+  }
 }
 
 function renderMobileBottomNav() {
@@ -233,13 +260,7 @@ function renderMobileBottomNav() {
 
   const mobLogout = document.getElementById('mob-nav-logout');
   if (mobLogout) {
-    mobLogout.addEventListener('click', async () => {
-      stopLiveTracker();
-      try { await api.logout(user.id); } catch (e) {}
-      api.setToken(null);
-      state.setUser(null);
-      state.setView('login');
-    });
+    mobLogout.addEventListener('click', () => window.logoutUser());
   }
 }
 
@@ -264,8 +285,7 @@ async function initApp() {
   });
 
   window.addEventListener('auth:expired', () => {
-    state.setUser(null);
-    state.setView('login');
+    window.logoutUser();
     window.showToast('Your session has expired. Please sign in again.', 'warning');
   });
 

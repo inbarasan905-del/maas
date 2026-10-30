@@ -5,6 +5,10 @@ import { startLiveTracker, stopLiveTracker, formatTimeOnly, formatDurationHuman,
 export function renderEmployeeView() {
   const container = document.getElementById('view-content');
   const user = state.user;
+  if (!user) {
+    state.setView('login');
+    return;
+  }
 
   container.innerHTML = `
     <div class="employee-dashboard-layout">
@@ -470,16 +474,12 @@ function setupEmployeeActions() {
   });
 
   // Logout button
-  document.getElementById('btn-emp-logout').addEventListener('click', async () => {
-    stopLiveTracker();
-    try {
-      await api.logout(state.user.id);
-    } catch (e) {}
-    api.setToken(null);
-    state.setUser(null);
-    state.setView('login');
-    window.showToast('Logged out. Your working hours for today have been finalized.', 'info');
-  });
+  const empLogoutBtn = document.getElementById('btn-emp-logout');
+  if (empLogoutBtn) {
+    empLogoutBtn.addEventListener('click', () => {
+      window.logoutUser();
+    });
+  }
 
   // Export CSV
   document.getElementById('btn-export-emp-csv').addEventListener('click', async () => {

@@ -4,6 +4,11 @@ import { formatTimeOnly } from '../timer.js';
 
 export function renderAdminView() {
   const container = document.getElementById('view-content');
+  const user = state.user;
+  if (!user) {
+    state.setView('login');
+    return;
+  }
 
   container.innerHTML = `
     <div class="admin-dashboard-layout">
