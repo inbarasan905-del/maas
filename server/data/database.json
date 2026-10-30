@@ -293,6 +293,21 @@
       "workedSeconds": 21600,
       "status": "Short Hours",
       "note": "Approved early leave for doctor appointment"
+    },
+    {
+      "id": "ATT-2026-10-30-EMP-8238",
+      "employeeId": "EMP-8238",
+      "employeeName": "abi",
+      "department": "Design",
+      "date": "2026-10-30",
+      "checkIn": "2026-10-30T09:04:27.831Z",
+      "checkOut": null,
+      "isOnBreak": false,
+      "breakStartTime": null,
+      "totalBreakSeconds": 0,
+      "workedSeconds": 0,
+      "status": "In Progress",
+      "note": "Auto-clocked in upon login"
     }
   ],
   "leaves": [
@@ -371,6 +386,13 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "LOG-1793351067836-93",
+      "timestamp": "2026-10-30T09:04:27.836Z",
+      "user": "abi",
+      "action": "AUTO_CHECK_IN",
+      "details": "User logged in. Automatic 8h work timer started at 2:34:27 pm."
+    },
     {
       "id": "LOG-1793350333236-567",
       "timestamp": "2026-10-30T08:52:13.236Z",

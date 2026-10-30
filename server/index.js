@@ -44,10 +44,19 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));
 });
 
-// Start listening
-app.listen(PORT, () => {
+// Start listening with error handling
+const server = app.listen(PORT, () => {
   console.log(`=======================================================`);
-  console.log(`🚀 Employee Management Server running on port ${PORT}`);
+  console.log(`🚀 MAAS Employee Management Server running on port ${PORT}`);
   console.log(`🌐 Local Web & Mobile PWA URL: http://localhost:${PORT}`);
   console.log(`=======================================================`);
+});
+
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.error(`\n⚠️  Port ${PORT} is currently in use by another instance or process.`);
+    console.log(`💡 The MAAS server is already running and accessible at: http://localhost:${PORT}`);
+  } else {
+    console.error('Server error:', err);
+  }
 });
